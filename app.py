@@ -105,6 +105,7 @@ page = st.sidebar.radio(
         "Community Risk Dashboard",
         "Climate-Health Alert Generator",
         "Live Weather Signal",
+        "Field Data Collection",
         "UNICEF Readiness"
     ]
 )
@@ -244,6 +245,55 @@ elif page == "Live Weather Signal":
         st.error("Live weather signal could not be loaded. The prototype can still run with stored field data.")
         st.write(error)
 
+elif page == "Field Data Collection":
+    st.subheader("Field Data Collection Pathway")
+
+    st.write(
+        """
+        AquaMed360 includes a field-data collection pathway through KoboToolbox.
+        This allows community volunteers, health workers, school representatives and FCAAI field teams
+        to submit structured climate-health reports from vulnerable coastal communities.
+        """
+    )
+
+    st.markdown("### Live Field Reporting Form")
+
+    st.link_button(
+        "Open AquaMed360 KoboToolbox Field Report Form",
+        "https://ee.kobotoolbox.org/x/lQXvMi0B"
+    )
+
+    st.markdown("### What the form captures")
+
+    st.write(
+        """
+        The field form captures community-level information on flooding, water contamination,
+        diarrhoea or vomiting symptoms among children, malaria-like symptoms, school disruption,
+        health facility access, estimated affected children, urgency level, recommended action
+        and optional photo evidence.
+        """
+    )
+
+    st.markdown("### Why this matters")
+
+    st.write(
+        """
+        This data pathway shows how AquaMed360 can move from a dashboard prototype to a practical
+        early warning and response system. Field reports can be used to validate risk scores,
+        improve local alerts and guide child-focused community response.
+        """
+    )
+
+    st.markdown("### Field validation partner")
+
+    st.info(
+        """
+        The Foundation for Climate Action and Agriculture Initiative will support community entry,
+        safeguarding, field reporting, data validation and pilot learning in coastal communities
+        in Ondo State, Nigeria.
+        """
+    ) 
+    
 elif page == "UNICEF Readiness":
     st.subheader("UNICEF Venture Fund Readiness")
 
